@@ -1,0 +1,6 @@
+version: 1
+unique_name: cicd-demo-customer
+object_type: catalog
+label: cicd-demo-customer
+aggressive_agg_promotion: false
+build_speculative_aggs: true
