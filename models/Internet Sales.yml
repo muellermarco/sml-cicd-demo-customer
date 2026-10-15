@@ -1,6 +1,35 @@
 unique_name: Internet Sales
 object_type: model
 label: Internet Sales
+dimensions: []
 metrics:
-  - unique_name: Sales Amount
-relationships: []
+  - unique_name: Sales_Amount
+  - unique_name: Order_Quantity
+  - unique_name: AVG Amount per Quantity
+relationships:
+  - unique_name: factinternetsales_orderdatekey_to_Dim Date_Date
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - orderdatekey
+    role_play: Order {0}
+    to:
+      dimension: Dim Date
+      level: Date
+  - unique_name: factinternetsales_shipdatekey_to_Dim Date_Date
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - shipdatekey
+    role_play: Ship {0}
+    to:
+      dimension: Dim Date
+      level: Date
+  - unique_name: factinternetsales_productkey_to_Dim Product_Product
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - productkey
+    to:
+      dimension: Dim Product
+      level: Product

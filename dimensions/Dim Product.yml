@@ -1,0 +1,26 @@
+unique_name: Dim Product
+object_type: dimension
+label: Dim Product
+hierarchies:
+  - unique_name: Dim Product Hierarchy
+    label: Dim Product Hierarchy
+    levels:
+      - unique_name: Productline
+      - unique_name: Product
+level_attributes:
+  - unique_name: Product
+    label: Product
+    contains_unique_names: false
+    dataset: dimproduct
+    is_unique_key: false
+    key_columns:
+      - productkey
+    name_column: englishproductname
+  - unique_name: Productline
+    label: Productline
+    contains_unique_names: false
+    dataset: dimproduct
+    key_columns:
+      - productline
+    name_column: productline
+type: standard

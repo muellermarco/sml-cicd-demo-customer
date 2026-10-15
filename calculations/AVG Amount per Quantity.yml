@@ -1,0 +1,4 @@
+unique_name: AVG Amount per Quantity
+object_type: metric_calc
+label: AVG Amount per Quantity
+expression: '[Measures].[Sales_Amount] / [Measures].[Order_Quantity]'
