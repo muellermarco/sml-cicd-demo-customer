@@ -1,1 +1,37 @@
+# macOS and Windows
 .DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Secrets and local config
+.env
+.env.*
+*.pem
+*.key
+
+# Python helper scripts
+__pycache__/
+*.pyc
+.venv/
+
+# sml-cli: installed packages and validation output
+packages/
+node_modules/
+sml-cli.log
+
+# Power BI and Tableau local files
+*.pbix.bak
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+*.twbr
+~$*
+
+# Archives
+*.zip
