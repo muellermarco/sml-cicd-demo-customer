@@ -28,8 +28,8 @@ sml-cli.log
 
 # Power BI and Tableau local files
 *.pbix.bak
-.pbi/localSettings.json
-.pbi/cache.abf
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
 *.twbr
 ~$*
 
